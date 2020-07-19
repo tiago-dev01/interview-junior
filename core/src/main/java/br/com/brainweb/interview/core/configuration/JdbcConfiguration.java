@@ -14,16 +14,16 @@ import java.util.concurrent.TimeUnit;
 @Configuration
 public class JdbcConfiguration {
 
-    @Value("${jdbc.url}")
+    @Value("${spring.datasource.url}")
     private String jdbcUrl;
 
-    @Value("${jdbc.username}")
+    @Value("${spring.datasource.username}")
     private String username;
 
-    @Value("${jdbc.password}")
+    @Value("${spring.datasource.password}")
     private String password;
 
-    @Value("${jdbc.schema}")
+    @Value("${spring.flyway.schemas}")
     private String schema;
 
     @Bean
